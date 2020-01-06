@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="image_download_url">https://picsum.photos/200/300/?random</string>
+</resources>

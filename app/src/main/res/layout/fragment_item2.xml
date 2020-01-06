@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_border">
+
+    <TextView
+        android:id="@+id/s_date"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="#302f2f"/>
+
+    <ImageView
+        android:id="@+id/s_icon"
+        android:width="30dp"
+        android:height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="#302f2f"/>
+
+    <TextView
+        android:id="@+id/smi_temp"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:gravity="end"
+        android:textSize="22sp"
+        android:background="#302f2f"/>
+
+    <TextView
+        android:id="@+id/smx_temp"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:textSize="22sp"
+        android:gravity="end"
+        android:background="#302f2f"/>
+
+</TableRow>

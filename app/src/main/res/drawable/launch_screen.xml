@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:drawable="@android:color/black"/>
+<item>
+    <bitmap
+        android:gravity="center"
+        android:src="@drawable/weather_partly_snowy_rainy"/>
+</item>
+<item
+    android:width="200dp"
+    android:height="200dp"
+    android:gravity="fill">
+    <bitmap
+        android:src="@mipmap/power_by"
+        android:gravity="bottom"
+        android:mipMap="true"/>
+</item>
+</layer-list>

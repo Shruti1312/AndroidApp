@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp">
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="1">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/wind" />
+
+          <TextView
+              android:id="@+id/t_windSpeed"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Wind Speed"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+      </android.support.v7.widget.CardView>
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="2">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/pressure" />
+
+          <TextView
+              android:id="@+id/t_pressure"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Pressure"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+
+      </android.support.v7.widget.CardView>
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="3">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/weather_pouring" />
+
+          <TextView
+              android:id="@+id/t_precipitation"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Precipitation"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="1">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/thermometer" />
+
+          <TextView
+              android:id="@+id/t_temperature"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Temperature"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+      </android.support.v7.widget.CardView>
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="2">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:id="@+id/t_iconImg"
+              android:layout_width="110dp"
+              android:layout_height="105dp"
+              android:background="#302f2f"
+              android:scaleType="fitCenter"
+              android:src="@drawable/wind" />
+
+          <TextView
+              android:id="@+id/t_iconText"
+              android:layout_width="110dp"
+              android:layout_height="60dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+
+      </android.support.v7.widget.CardView>
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="3">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/humidity" />
+
+          <TextView
+              android:id="@+id/t_humidity"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Humidity"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+
+      </android.support.v7.widget.CardView>
+
+  </TableRow>
+
+  <TableRow
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="1">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/visibility" />
+
+          <TextView
+              android:id="@+id/t_visibility"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Visibility"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+
+      </android.support.v7.widget.CardView>
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="2">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/cc" />
+
+          <TextView
+              android:id="@+id/t_cloudCover"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Cloud Cover"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+
+      </android.support.v7.widget.CardView>
+      <android.support.v7.widget.CardView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          card_view:cardBackgroundColor="#302f2f"
+          card_view:cardCornerRadius="10dp"
+          card_view:cardElevation="10dp"
+          android:layout_column="3">
+
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="110dp"
+              android:layout_height="65dp"
+              android:background="#302f2f"
+              android:scaleType="centerInside"
+              android:src="@drawable/earth" />
+
+          <TextView
+              android:id="@+id/t_ozone"
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text=""
+              android:textColor="@android:color/white"
+              android:textSize="20sp"
+              android:textStyle="bold" />
+
+          <TextView
+              android:layout_width="110dp"
+              android:layout_height="50dp"
+              android:background="#302f2f"
+              android:gravity="center"
+              android:text="Ozone"
+              android:textColor="@android:color/darker_gray"
+              android:textSize="18sp" />
+        </LinearLayout>
+
+
+      </android.support.v7.widget.CardView>
+
+  </TableRow>
+
+</TableLayout>

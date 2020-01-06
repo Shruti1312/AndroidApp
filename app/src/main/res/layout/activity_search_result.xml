@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/search_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:text="Search Result"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:id="@+id/linlaHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progress_s">
+        </ProgressBar>
+
+        <TextView
+            android:layout_width="231dp"
+            android:layout_height="53dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:text="Fetching Weather"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <!-- android:layout_below="@id/auto_complete_edit_text"-->
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#302f2f"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp"
+        android:clickable="true"
+        android:onClick="OnCard1Click"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TableLayout
+            android:id="@+id/table_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="40dp"
+            android:background="#302f2f"
+            android:gravity="center">
+
+            <TableRow android:background="#302f2f">
+
+                <ImageView
+                    android:id="@+id/icon_img"
+                    android:layout_width="100dp"
+                    android:layout_height="111dp"
+                    android:layout_column="1"
+                    android:background="#302f2f"/>
+
+                <TableLayout android:background="#302f2f">
+                    <TableRow
+                        android:background="#302f2f"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/temperature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="54dp"
+                            android:layout_column="1"
+                            android:layout_marginTop="10dp"
+                            android:background="#302f2f"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="45sp"
+                            android:textStyle="bold"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                    <TableRow
+                        android:background="#302f2f"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/summary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_column="1"
+                            android:layout_marginStart="10dp"
+                            android:background="#302f2f"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="18dp"
+                            android:typeface="serif" />
+
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#302f2f"
+            android:gravity="center"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text=""
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:id="@+id/infoIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_column="1"
+            android:background="#302f2f"
+            android:layout_gravity="bottom|right"
+            android:src="@drawable/info_icon"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#302f2f"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp">
+
+        <TableLayout
+            android:id="@+id/table_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#302f2f">
+
+            <TableRow android:background="#302f2f">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_column="1"
+                    android:background="#302f2f"
+                    android:padding="5dp"
+                    android:src="@drawable/humidity_summary" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_column="2"
+                    android:background="#302f2f"
+                    android:padding="5dp"
+                    android:src="@drawable/wind_summary" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_column="3"
+                    android:background="#302f2f"
+                    android:padding="5dp"
+                    android:src="@drawable/visibility_summary" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_column="4"
+                    android:background="#302f2f"
+                    android:padding="5dp"
+                    android:scaleType="fitStart"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/pressure_summary" />
+
+            </TableRow>
+
+            <TableRow android:background="#302f2f">
+
+                <TextView
+                    android:id="@+id/humidity"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="#302f2f"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_column="1"/>
+
+                <TextView
+                    android:id="@+id/windSpeed"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="#302f2f"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_column="2"/>
+
+                <TextView
+                    android:id="@+id/visibility"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:background="#302f2f"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_column="3"/>
+
+                <TextView
+                    android:id="@+id/pressure"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:background="#302f2f"
+                    android:gravity="start"
+                    android:text=""
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:background="#302f2f"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="#302f2f"
+                    android:text="Humidity"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_column="1"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="#302f2f"
+                    android:text="Wind Speed"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_column="2"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:background="#302f2f"
+                    android:text="Visibility"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_column="3"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="6dp"/>
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="wrap_content"
+                    android:background="#302f2f"
+                    android:text="Pressure"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:layout_marginLeft="5dp"
+                    android:layout_column="4"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginTop="6dp"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#302f2f"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="10dp">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:name="com.csci571.forecast.ItemFragment2"
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/map_marker_plus"
+        app:backgroundTint="#BB86FC"
+        android:tint="@android:color/black"
+        android:layout_margin="16dp"
+        android:visibility="gone"/>
+
+    <android.support.design.widget.FloatingActionButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fab_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/map_marker_minus"
+        app:backgroundTint="#BB86FC"
+        android:tint="@android:color/black"
+        android:layout_margin="16dp"
+        android:visibility="gone"/>
+
+</android.support.design.widget.CoordinatorLayout>
