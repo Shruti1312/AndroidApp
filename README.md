@@ -1,4 +1,4 @@
-<h1> Android Mobile App <h1>
+<h1> Android Mobile App </h1>
  
  <p>It's an Android application, which allows users to search for cities to see weather summary, look at detailed information about them, pin those cities to favorites and post on Twitter about the weather.
 Backend service is on Node.js and the app uses API call. 
